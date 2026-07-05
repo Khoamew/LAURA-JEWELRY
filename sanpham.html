@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELYSIAN JEWELRY | Fine Jewelry & Gemstones</title>
+	<link href="CSS/dinhdang.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="#">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            LAURA JEWELRY
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.HTML">Trang Chủ</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="sanpham.html">Sản Phẩm</a></li>
+                <li><a href="giohang.html">Giỏ Hàng</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+                <li><a href="dangnhap.html" data-auth-link>Đăng Nhập</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-video">
+            <a class="hero-video-link" href="https://www.youtube.com/watch?v=9bZkp7q19f0" target="_blank" rel="noopener noreferrer">
+                <video class="hero-bg-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca1?q=80&w=2000">
+                    <source src="video/The Quartz Jewelry Animation-1440.mp4" type="video/mp4">
+                    
+                </video>
+            </a>
+        </div>
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                FINE JEWELRY MAISON
+            </span>
+
+            <h1>
+                Nghệ Thuật Chế Tác Trang Sức Đá Quý
+            </h1>
+
+            <p>
+                Tôn vinh vẻ đẹp của đá quý thiên nhiên thông qua bàn tay của những nghệ nhân chế tác bậc thầy.
+            </p>
+
+            <button class="hero-btn">
+                Khám Phá Bộ Sưu Tập
+            </button>
+
+        </div>
+
+    </section>
+	
+    <!-- ========================= -->
+    <!-- PRODUCTS -->
+    <!-- ========================= -->
+
+
+    <section id="products" class="products-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span>DANH MỤC</span>
+
+                <h2>
+                    Bộ Sưu Tập Nổi Bật
+                </h2>
+
+            </div>
+
+            <div class="cta-links" style="justify-content:center; margin-bottom:32px;">
+                <a href="index.HTML">Quay lại trang chủ</a>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=1200" alt="">
+
+                    <div class="product-info">
+
+                        <h3>Nhẫn Kim Cương</h3>
+
+                        <p>15.000.000 VNĐ</p>
+
+                        <button onclick="showProduct(
+                            'Nhẫn Kim Cương',
+                            '15.000.000 VNĐ',
+                            'Kim cương thiên nhiên cao cấp.'
+                        )">
+                            Xem Chi Tiết
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=1200" alt="">
+
+                    <div class="product-info">
+
+                        <h3>Dây Chuyền Sapphire</h3>
+
+                        <p>22.000.000 VNĐ</p>
+
+                        <button onclick="showProduct(
+                            'Dây Chuyền Sapphire',
+                            '22.000.000 VNĐ',
+                            'Sapphire xanh thiên nhiên.'
+                        )">
+                            Xem Chi Tiết
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <img src="image/Bông Tai Ruby.jpg" alt="">
+
+                    <div class="product-info">
+
+                        <h3>Bông Tai Ruby</h3>
+
+                        <p>18.000.000 VNĐ</p>
+
+                        <button onclick="showProduct(
+                            'Bông Tai Ruby',
+                            '18.000.000 VNĐ',
+                            'Ruby đỏ huyết bồ câu.'
+                        )">
+                            Xem Chi Tiết
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <img src="image/Vòng Tay Emerald.jpg" alt="">
+
+                    <div class="product-info">
+
+                        <h3>Vòng Tay Emerald</h3>
+
+                        <p>12.500.000 VNĐ</p>
+
+                        <button onclick="showProduct(
+                            'Vòng Tay Emerald',
+                            '12.500.000 VNĐ',
+                            'Vòng tay emerald sang trọng và thanh lịch.'
+                        )">
+                            Xem Chi Tiết
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="product-card">
+
+                    <img src="image/Lắc Tay Pearl.jpg" alt="">
+
+                    <div class="product-info">
+
+                        <h3>Lắc Tay Pearl</h3>
+
+                        <p>9.800.000 VNĐ</p>
+
+                        <button onclick="showProduct(
+                            'Lắc Tay Pearl',
+                            '9.800.000 VNĐ',
+                            'Lắc tay pearl mang vẻ đẹp nhẹ nhàng và quý phái.'
+                        )">
+                            Xem Chi Tiết
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- PRODUCT DETAIL -->
+    <!-- ========================= -->
+
+    <section id="detail" class="detail-section">
+
+        <div class="container">
+
+            <div class="detail-box">
+
+                <h2 id="detailName">
+                    Chi Tiết Sản Phẩm
+                </h2>
+
+                <h3 id="detailPrice">
+                    --
+                </h3>
+
+                <p id="detailDesc">
+                    Chọn sản phẩm để xem thông tin.
+                </p>
+
+                <button onclick="addToCart()">
+                    Thêm Vào Giỏ Hàng
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <div class="footer-grid">
+
+                <div class="footer-column footer-brand">
+                    <div class="brand-logo">LAURA JEWELRY</div>
+                    <p>170E Phan Đăng Lưu, Phường Đức Nhân, TP. Hồ Chí Minh</p>
+                    <p>Điện thoại: 028 3995 1703 • Fax: 028 3995 1702</p>
+                    <p>Email: cskh@pnj.com.vn</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>VỀ LAURA JEWELRY</h4>
+                    <ul>
+                      <li><a href="gioithieu.html">Quan hệ cổ đông (IR)</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Xuất khẩu</a></li>
+                        <li><a href="#">Kinh doanh sỉ</a></li>
+                        <li><a href="#">Kiểm định kim cương</a></li>
+                        <li><a href="#">Quà tặng doanh nghiệp</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>DỊCH VỤ KHÁCH HÀNG</h4>
+                    <ul>
+                        <li><a href="#">Hướng dẫn đo size trang sức</a></li>
+                        <li><a href="#">Mua hàng trả góp</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng và thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn tra cứu giá</a></li>
+                        <li><a href="#">Cẩm nang sử dụng trang sức</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-social">
+                    <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-btn">f</a>
+                        <a href="#" class="social-btn">i</a>
+                        <a href="#" class="social-btn">▶</a>
+                        <a href="mailto:cskh@pnj.com.vn" class="social-btn">✉</a>
+                    </div>
+                    <div class="zalo-box">
+                        <span>Quan tâm ZALO LAURA JEWELRY</span>
+                        <a href="#" class="zalo-btn">Quan tâm</a>
+                    </div>
+                    <h4>PHƯƠNG THỨC THANH TOÁN</h4>
+                    <div class="payment-icons">
+                        <span>VISA</span>
+                        <span>Mastercard</span>
+                        <span>JCB</span>
+                        <span>Internet Banking</span>
+                        <span>Trả góp 0%</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Công Ty Cổ Phần Vàng Bạc Đá Quý Phú Nhuận. Giấy chứng nhận đăng ký doanh nghiệp: 0300521758 do Sở Tài chính TP. Hồ Chí Minh cấp lần đầu ngày 02/01/2004.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ========================= -->
+    <!-- CHATBOT -->
+    <!-- ========================= -->
+
+    <div id="chatbot">
+
+        <div id="chat-header">
+            AI Assistant
+        </div>
+
+        <div id="chat-body">
+
+            <div class="bot-message">
+                Xin chào, tôi có thể hỗ trợ gì cho bạn?
+            </div>
+
+        </div>
+
+        <div class="chat-input">
+
+            <input id="chatInput" type="text" placeholder="Nhập tin nhắn...">
+
+            <button onclick="sendMessage()">
+                Gửi
+            </button>
+
+        </div>
+
+    </div>
+
+    <button id="chatToggle">
+        💬
+    </button>
+
+    <script src="script/taitrang.js"></script>
+
+</body>
+
+</html>
